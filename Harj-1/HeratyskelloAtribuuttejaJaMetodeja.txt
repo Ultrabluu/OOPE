@@ -1,0 +1,13 @@
+Her‰tyskelloluokka
+Atribuutteja:
+		Aika
+		Her‰tysAika
+		AikaVektorit
+Metodeja:
+	SoitaKelloa
+	AsetaAika
+	AsetaHer‰tys
+	Piirr‰Aika
+	AsetaHer‰tys
+	SuljeHer‰tys
+	
