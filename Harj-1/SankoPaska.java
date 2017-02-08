@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  */
 
-public class Sanko {
+public class SankoPaska {
     
     private double tilavuus;
     
@@ -18,7 +18,7 @@ public class Sanko {
     *   Le constructoor
     */
     
-    public Sanko()
+    public SankoPaska()
     {
         tilavuus = ThreadLocalRandom.current().nextDouble(0.1, 10 + 1 );
     }

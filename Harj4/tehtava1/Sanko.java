@@ -1,3 +1,5 @@
+package tehtava1;
+
 import java.util.concurrent.ThreadLocalRandom;
 /* 
  * Viikkoharjoitus 2, tehtävä 2.
@@ -8,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
  *
  */
 
-public class Sanko2 extends Esine {
+public class Sanko extends Esine {
     
     private double tilavuus;
     
@@ -18,13 +20,13 @@ public class Sanko2 extends Esine {
     *   Le constructoor
     */
     
-    public Sanko2()
+    public Sanko()
     {
         super();
         tilavuus = ThreadLocalRandom.current().nextDouble(0.1, 10 + 1 );     
     }
     
-    public Sanko2(double tilavuus, boolean vm)
+    public Sanko(double tilavuus, boolean vm)
     {
         if ( tilavuus > 0.1 && tilavuus < 20 )
             this.tilavuus = tilavuus;
@@ -36,9 +38,13 @@ public class Sanko2 extends Esine {
             this.tilavuus = tilavuus;
     }
     
-    public double getTilavuus()
+    public double tilavuus()
     {
         return tilavuus;
+    }
+    
+    public boolean muovia() {
+        return muovisuus;
     }
     
 

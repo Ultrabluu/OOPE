@@ -1,3 +1,4 @@
+package tehtava1;
 /* 
  * Viikkoharjoitus 3, tehtävä 2.
  *  

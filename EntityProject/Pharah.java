@@ -1,3 +1,4 @@
+
 /* 
  * Viikkoharjoitus 1, tehtävä 6.
  *  
@@ -9,7 +10,7 @@
  *  dps = DamagePerSecond
  */
 
-public class Pharah extends Character {
+public class Pharah extends Character implements Controllable {
     
     // Constructors \\
     public Pharah(boolean isNPC)

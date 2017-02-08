@@ -1,3 +1,4 @@
+package tehtava1;
 /* 
  * Viikkoharjoitus 3, tehtävä 1.
  *  
@@ -40,7 +41,7 @@ public class Avain extends Esine {
             this.avainNro = avainNro;
     }
     
-    public int getAvainNro()
+    public int numero()
     {
         return avainNro;
     }
@@ -50,7 +51,7 @@ public class Avain extends Esine {
         this.muovisuus = muovisuus;
     }
     
-    public boolean getMuovisuus()
+    public boolean muovia()
     {
         return muovisuus;
     }

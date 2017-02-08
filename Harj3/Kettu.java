@@ -1,3 +1,4 @@
+
 /*
  * Viikkoharjoitus 3, tehtävä 6.
  *
