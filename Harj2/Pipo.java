@@ -55,6 +55,18 @@ public class Pipo {
    public Pipo(String uusiKoko) {
       koko(uusiKoko);
    }
+   
+   public boolean equals(Object pipo) {
+       try {
+           if (pipo != null)
+               return pipo.equals(koko());       
+       }
+       catch (Exception e) {
+           System.out.println(e);
+       }
+       return false;
+
+   }
 
    /* 
     * Aksessorit.

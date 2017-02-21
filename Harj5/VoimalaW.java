@@ -1,5 +1,5 @@
 /*
- * Viikkoharjoitus 3, tehtävä 3.
+ * Viikkoharjoitus 5, tehtävä 4.
  *
  * Olio-ohjelmoinnin perusteet, kevät 2017, Jorma Laurikkala, jorma.laurikkala@uta.fi.
  *
@@ -7,7 +7,7 @@
  *
  */
 
-public class Voimala implements Comparable<Voimala> {
+public class VoimalaW implements Comparable<Voimala> {
 
    /*
     * Attribuutit.
@@ -29,7 +29,7 @@ public class Voimala implements Comparable<Voimala> {
    
    @Override
    public String toString() {
-       return getClass().getSimpleName() + " " +teho() + " MW";
+       return getClass().getSimpleName() + " " +teho();
    }
 
    /*

@@ -5,6 +5,7 @@
 
 public abstract class Character {
     
+    public static String newline = System.getProperty("line.separator");
     private String name;
     private String weapon;
     private boolean isNPC;
@@ -45,6 +46,13 @@ public abstract class Character {
         return isNPC;
     }
     
+    // To be added: prints to all method -> Good for checking, which features are implemented already.
+    @Override
+    public String toString() {
+        return "This model's name is:." + name + newline + 
+               "Is a npc:............." + isNPC + newline;
+               
+    }
     
        
 }

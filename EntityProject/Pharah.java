@@ -15,7 +15,7 @@ public class Pharah extends Character implements Controllable {
     // Constructors \\
     public Pharah(boolean isNPC)
     {
-        super(isNPC);
+        super(isNPC);   
         setRps(1);
         setWeaponDmg(120);
     }
@@ -75,8 +75,26 @@ public class Pharah extends Character implements Controllable {
     }
     
     public void action2() {
-        System.out.println("Using action 1 - *Activates thrusters* ");
+        System.out.println("Using action 2 - *Activates thrusters* ");
     }
     
     // END-Actions \\
+    
+    // Overrides \\
+    
+    @Override
+    public String toString() {
+        return "This model's name is:." + name + newline + 
+               "Is a npc:............." + isNPC + newline +
+               "Weapon damage:........" + weaponDmg + newline + 
+               "Rounds per second:...." + rps + newline;
+               
+    }
+    
+    
+    
+    
+    
+    
+    
 }

@@ -1,3 +1,7 @@
+/* Models weapons> Rocket launcher generally.
+ * Work very much in progress.
+ * Rps = RoundsPerSecond
+ */
 
 public class RocketLauncher extends Weapon {
     

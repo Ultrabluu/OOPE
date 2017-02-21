@@ -1,4 +1,4 @@
-package tehtava1;
+package esineet;
 /* 
  * Viikkoharjoitus 3, tehtävä 1.
  *  
@@ -12,6 +12,30 @@ public class Avain extends Esine {
     
     private int avainNro;
     private boolean muovisuus;
+    
+    @Override
+    public boolean equals(Object x) {
+       try {
+           if (x != null) {              
+               if (x.equals("Avain" + muovia() + numero())) {
+                   return true; 
+           }
+           else
+               return false;
+       }
+       }
+       catch(Exception e) {
+           System.out.println(e);
+           return false;
+       }
+       // Shouldn't go here at all, but compiler requires this return value here, due to if-structure.
+       return false;
+    }
+    
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +  " " + muovia() + " " + numero();
+    }
     
     //
     // Le constructors
@@ -39,7 +63,7 @@ public class Avain extends Esine {
     {
         if (avainNro >= 1)
             this.avainNro = avainNro;
-    }
+    }    
     
     public int numero()
     {

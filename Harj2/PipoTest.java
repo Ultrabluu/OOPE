@@ -14,8 +14,7 @@ public class PipoTest {
     {
         Pipo Pipo = new Pipo();
         Pipo Pipo2 = new Pipo("XL");
-        System.out.println(Pipo.koko());
-        System.out.println(Pipo2.koko());
+        System.out.println(Pipo.equals(Pipo2));
     }
 
 }

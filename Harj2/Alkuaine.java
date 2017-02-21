@@ -12,6 +12,15 @@ public class Alkuaine {
     private String alkuaine;
     private int jarjestysnumero;
     
+    public String toString() {
+        String returnString = "State is " + getAlkuaine() + " and " + getJarjestysnumero();
+        return returnString;
+    }
+    
+    /*
+     * BUILDERRRRRRS
+     */
+    
     public Alkuaine(String alkuaine, int jarjestysnumero)
     {
         if(alkuaine != null && alkuaine.length() > 0 && alkuaine.length() <= 3)
@@ -20,7 +29,9 @@ public class Alkuaine {
             this.jarjestysnumero = jarjestysnumero;
     }
     
-    // Getterit + setterit START!
+   
+    
+    // Getterit + setterit
     public void setAlkuaine(String alkuaine)
     {
         if(alkuaine != null && alkuaine.length() > 0 && alkuaine.length() <= 3)
@@ -43,6 +54,5 @@ public class Alkuaine {
         return jarjestysnumero;
     }
     
-    // Getterit + setterit END!
 
 }

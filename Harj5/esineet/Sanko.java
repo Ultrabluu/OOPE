@@ -1,4 +1,4 @@
-package tehtava1;
+package esineet;
 
 import java.util.concurrent.ThreadLocalRandom;
 /* 
@@ -14,7 +14,31 @@ public class Sanko extends Esine {
     
     private double tilavuus;
     
-    public static final boolean muovisuus = true;
+    public boolean muovisuus;
+    
+    @Override
+    public boolean equals(Object x) {
+       try {
+           if (x != null) {  
+               if (x.equals("Sanko" + muovia() + tilavuus())) {
+                   return true; 
+           }
+           else
+               return false;
+       }
+       }
+       catch(Exception e) {
+           System.out.println(e);
+           return false;
+       }
+       // Shouldn't go here at all, but compiler requires this return value here, due to if-structure.
+       return false;
+    }
+    
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +  " " + muovia() + " " + tilavuus();
+    }
     
     /* 
     *   Le constructoor
@@ -30,6 +54,9 @@ public class Sanko extends Esine {
     {
         if ( tilavuus > 0.1 && tilavuus < 20 )
             this.tilavuus = tilavuus;
+        if (muovisuus != vm)
+            muovisuus = vm;
+            
     }
     
     public void setTilavuus(double tilavuus)
