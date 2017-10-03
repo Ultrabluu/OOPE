@@ -14,6 +14,7 @@ public class YdinreaktoriCopyTest {
         ydin1.setTeho(50);
         System.out.println(ydin1.toString());
         System.out.println(ydin2.toString());
+	System.out.println("Hello!");
             
     }
     
